@@ -1,4 +1,4 @@
-import OwnModal from "./OwnModal";
+import OwnModal from "../Components/OwnModal";
 
 const FlipCardBack = ({ char }) => {
   return (

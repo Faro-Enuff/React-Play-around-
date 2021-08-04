@@ -1,12 +1,22 @@
 * {
   margin: 0;
 }
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid rgb(108, 25, 116);
 }
 
 .flip-card-inner {
@@ -36,7 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(123, 123, 211);
+  background-color: rgb(108, 25, 116);
   color: white;
   transform: rotateY(180deg);
 }

@@ -16,7 +16,6 @@ const useFetch = () => {
       }
       const list = await response.json();
       setData(list.results);
-      console.log(list.info.next);
       setNext(list.info.next);
       setPrev(list.info.prev);
       setIsPending(false);

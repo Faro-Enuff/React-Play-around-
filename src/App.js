@@ -1,9 +1,12 @@
-import Home from "./Home";
+import Layout from "./Components/Layout";
+import Home from "./Viewer/Home";
 function App() {
   return (
     <div className="App">
       <div className="content">
-        <Home />
+        <Layout>
+          <Home />
+        </Layout>
       </div>
     </div>
   );
