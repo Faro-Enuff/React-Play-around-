@@ -3,12 +3,15 @@ const useStyles = makeStyles({
   flipCardFront: {
     position: "absolute",
     width: "100%",
+    height: "100%",
     webkitBackfaceVisibility: "hidden",
     backfaceVisibility: "hidden",
     borderRadius: "25px 25px 25px 25px",
   },
   image: {
     borderRadius: "25px 25px 25px 25px",
+    width: "100%",
+    height: "100%",
     boxShadow:
       "0.2px 0.2px 0.2px rgba(0, 0, 0, 0.15), -0.2em 0 0.7em rgba(108, 25, 116)",
   },
