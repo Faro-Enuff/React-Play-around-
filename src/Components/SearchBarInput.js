@@ -36,7 +36,7 @@ const SearchBarInput = ({ handleSearch, searchTerm }) => {
       <CssTextField
         className={classes.margin}
         id="outlined-size-normal"
-        label="Search Avatar..."
+        label="Search Avatar...."
         onChange={handleSearch}
         value={searchTerm}
         variant="outlined"
