@@ -1,5 +1,6 @@
 import OwnModal from "../Components/OwnModal";
 import { makeStyles } from "@material-ui/core/styles";
+import { Typography } from "@material-ui/core";
 const useStyles = makeStyles({
   flipCardBack: {
     position: "absolute",
@@ -10,17 +11,23 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "rgb(108, 25, 116)",
+    backgroundColor: "rgb(226, 221, 230)",
     color: "white",
     transform: "rotateY(180deg)",
     borderRadius: "25px 25px 25px 25px",
+  },
+  logo: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 const FlipCardBack = ({ char }) => {
   const classes = useStyles();
   return (
     <div className={classes.flipCardBack}>
-      <h1>{char.name}</h1>
+      <img className="logo" src="./Images/images.png" alt="" />
+      <Typography variant="h4">{char.name}</Typography>
       <OwnModal char={char} />
     </div>
   );

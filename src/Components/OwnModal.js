@@ -4,6 +4,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   modalContainer: {
@@ -15,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    borderColor: " rgba(108, 25, 116)",
+    borderWidth: 3,
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
@@ -60,14 +63,17 @@ const OwnModal = ({ char }) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h1>
+            <Typography variant="h2">
               {char.name} ({char.status})
-            </h1>
-            <p>
+            </Typography>
+            <Typography variant="h4">
               Species: {char.species}, {char.gender}
-            </p>
-            <p>Origin: {char.origin.name}</p>
-            <p>Location: {char.location.name}</p>
+            </Typography>
+            <Typography variant="body1">
+              Origin: {char.origin.name}
+              <br></br>
+              Location: {char.location.name}
+            </Typography>
           </div>
         </Fade>
       </Modal>

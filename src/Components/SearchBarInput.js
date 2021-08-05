@@ -25,10 +25,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20,
   },
   margin: {
-    margin: theme.spacing(1),
-  },
-  iconButton: {
-    padding: 20,
+    margin: theme.spacing(2),
+    fontWeight: "bold",
   },
 }));
 
@@ -39,18 +37,16 @@ const SearchBarInput = ({ handleSearch, searchTerm }) => {
     <form className={classes.root} noValidate>
       <CssTextField
         className={classes.margin}
-        id="searchInput"
-        label="Search avatar"
+        id="outlined-size-normal"
+        label="Search Avatar..."
         onChange={handleSearch}
         value={searchTerm}
+        defaultValue="large"
+        variant="outlined"
+        size="large"
+        color="secondary"
+        fullWidth
       />
-      <IconButton
-        type="submit"
-        className={classes.iconButton}
-        aria-label="search"
-      >
-        <SearchIcon />
-      </IconButton>
     </form>
   );
 };

@@ -1,11 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
-}
-.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 /* .flip-card {
@@ -47,6 +42,3 @@
   color: white;
   transform: rotateY(180deg);
 } */
-.flip {
-  background-color: rgb(226, 221, 230);
-}

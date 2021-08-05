@@ -7,17 +7,17 @@ import Paper from "@material-ui/core/Paper";
 const useStyles = makeStyles({
   charsList: {
     display: "flex",
-    marginLeft: "auto",
-    marginRight: "auto",
+    marginLeft: 5,
+    marginRight: 5,
     justifyContent: "center",
     alignItems: "center",
   },
   flipCard: {
-    backgroundColor: "rgba(226, 221, 230)",
+    backgroundColor: "rgba(229, 228, 230)",
     width: 300,
     height: 300,
-    padding: 25,
-    margin: 15,
+    padding: 30,
+    margin: "10px auto",
     perspective: 1000,
     borderRadius: "25px 25px 25px 25px",
     border: "2px solid rgb(108, 25, 116)",
