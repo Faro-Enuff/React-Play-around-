@@ -26,7 +26,6 @@ const FlipCardBack = ({ char }) => {
   const classes = useStyles();
   return (
     <div className={classes.flipCardBack}>
-      <img className="logo" src="../Images/images.png" alt="" />
       <Typography variant="h4">{char.name}</Typography>
       <OwnModal char={char} />
     </div>

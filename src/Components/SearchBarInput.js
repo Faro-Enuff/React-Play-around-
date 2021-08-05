@@ -1,8 +1,6 @@
 import React from "react";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import SearchIcon from "@material-ui/icons/Search";
-import IconButton from "@material-ui/core/IconButton";
 
 const CssTextField = withStyles({
   root: {
@@ -41,9 +39,7 @@ const SearchBarInput = ({ handleSearch, searchTerm }) => {
         label="Search Avatar..."
         onChange={handleSearch}
         value={searchTerm}
-        defaultValue="large"
         variant="outlined"
-        size="large"
         color="secondary"
         fullWidth
       />
