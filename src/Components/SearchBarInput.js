@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 20,
+    marginBottom: 20,
   },
   margin: {
     margin: theme.spacing(1),
@@ -28,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SearchBarInput = ({ chars, handleSearch }) => {
+const SearchBarInput = ({ handleSearch, searchTerm }) => {
   const classes = useStyles();
 
   return (

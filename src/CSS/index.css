@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.flip-card {
+/* .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
@@ -27,10 +27,10 @@
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.flip-card:hover .flip-card-inner {
+.flipCard:hover .flipCardInner {
   transform: rotateY(180deg);
-}
-.flip-card-front,
+} */
+/* .flip-card-front,
 .flip-card-back {
   position: absolute;
   width: 100%;
@@ -38,10 +38,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.flip-card-front {
-  background-color: cadetblue;
-  color: black;
-}
+
 .flip-card-back {
   display: flex;
   align-items: center;
@@ -49,9 +46,7 @@
   background-color: rgb(108, 25, 116);
   color: white;
   transform: rotateY(180deg);
-}
-.modal-container {
-  position: fixed;
-  display: flex;
-  margin-top: 150px;
+} */
+.flip {
+  background-color: rgb(226, 221, 230);
 }
