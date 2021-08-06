@@ -46,7 +46,16 @@ const Home = () => {
   ////////////////////////
   //Fetch Data
 
-  const { data: chars, isPending, error, next, prev, setUrl } = useFetch();
+  const {
+    data: chars,
+    isPending,
+    error,
+    next,
+    prev,
+    setUrl,
+    setAvatar,
+    avatar,
+  } = useFetch();
 
   ////////////////////////
   //Pagination Change
@@ -73,6 +82,8 @@ const Home = () => {
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
+    setAvatar(searchTerm);
+    setUrl(`https://rickandmortyapi.com/api/character?name=${avatar}`);
   };
 
   return (
